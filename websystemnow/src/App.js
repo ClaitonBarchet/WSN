@@ -15,14 +15,18 @@ function App () {
   const [user, setUser] = useState(undefined)
 
   return (
-    // https://www.w3schools.com/react/showreact.asp?filename=demo2_react_router
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Login />}>
-        <Route path="*" element={<Login />}/>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <body>
+      {/* https://www.w3schools.com/react/showreact.asp?filename=demo2_react_router */}
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Login />}>
+            <Route path="*" element={<Login />}/>
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </body>
+    </div>
   )
 }
 

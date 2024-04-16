@@ -1,16 +1,20 @@
 import React from 'react'
+import styles from "../login/Login.css"
+// import styles from "../../../public/css/styles.css"
 
 const Login = () => {
   return (
-    <div class="container">
+    <div className={styles.Login} class="container">
       <div class="row vh-100">
         <form  id="login-form" action="home.html" class="form-login">
           <div class="d-flex justify-content-center my-5 flex-column">
             <div class="container">
               <div class="text-cente mb-3">
                 {/* <img src="./assets/images/Logo ft black.png" alt="logo sinos" class="img-fluid" srcset=""> */}
+                {/* <img src="./assets/images/Logo ft black.png" alt="logo sinos" class="img-fluid" srcset=""> */}
+                <image src="../../public/imagens/Logo ft black.png" alt="logo sinos"></image>
               </div>
-                                
+           
               <div class="mb-4">
                 <label for="exampleInputEmail1" class="form-label">E-mail</label>
                   {/* <input type="email" class="form-control" id="email-login-input" aria-describedby="emailHelp"> */}
