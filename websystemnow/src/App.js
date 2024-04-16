@@ -17,17 +17,18 @@ function App () {
   return (
     <div>
       <body>
-      {/* https://www.w3schools.com/react/showreact.asp?filename=demo2_react_router */}
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Login />}>
-            <Route path="*" element={<Login />}/>
-            </Route>
-          </Routes>
-        </BrowserRouter>
+        <p></p>
+        {/* https://www.w3schools.com/react/showreact.asp?filename=demo2_react_router */}
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Login />}>
+              <Route path="*" element={<Login />}/>
+              </Route>
+            </Routes>
+          </BrowserRouter>
       </body>
     </div>
-  )
+  );
 }
 
 export default App

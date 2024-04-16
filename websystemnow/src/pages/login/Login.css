@@ -1,6 +1,5 @@
-#login, #home, #estoque, #tanques, #almoxarifado, #custos, #compras,#producao, #frota, #navegacao {
+body {
     background:linear-gradient(120deg, #4c79d34d 44.9%, #eeeeee 45%) no-repeat fixed;
-    /* background:linear-gradient(120deg, #4c79d34d 44.9%, #fbc524c6 45%) no-repeat fixed; */
 }
 
 .form-login {
@@ -15,18 +14,18 @@
 }
 
 .button-login {
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #014F93;
     color: #ffffff;
-    width: 60%;
+    width: 30%;
     margin: 0 25%;
 }
 
 #button-submit {
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #014F93;
     color: #ffffff;
-    width: 60%;
+    width: 30%;
     margin: 0 25%;
 }
 
