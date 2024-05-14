@@ -1,10 +1,11 @@
 
 /* FORMULARIO LOGIN */
 body {
-    background:linear-gradient(120deg, #4c79d34d 44.9%, #eeeeee 45%) no-repeat fixed;
+    background:linear-gradient(120deg, #a6c1f7 44.9%, #eeeeee 45%)  fixed;
+    /* background:linear-gradient(120deg, #4c79d34d 44.9%, #eeeeee 45%) no-repeat fixed; */
 }
 .form-login {
-    width: 40%;
+    width: 50%;
     margin: 0% 40%;
 }
 
@@ -22,15 +23,18 @@ body {
 } */
 
 /* BOTÃO ENTRAR */
-.button-login {
+.button-basic {
     border-radius: 5px;
+    border-color: #014F93;
     background-color: #014F93;
     color: #ffffff;
+    height: 30px;
     width: 150px;
     margin: 0 45%;
 }
-.button-login:hover {
-    background:  #4e79d3;
+.button-basic:hover {
+    border-color: #f6ca47;
+    background:  #f6ca47;
     color: #ffffff;
 }
 
@@ -47,23 +51,25 @@ body {
 .button-criar-conta {
     border-radius: 5px;
     background-color: white;
+    height: 30px;
     width: 150px;
     margin: 0 45%;
     border-color: rgb(210, 209, 209);
 }
 .button-criar-conta:hover {
-    background:  #4e79d3;
+    background:  #f6ca47;
     color: #ffffff;
 }
 
 /* FORMULÁRIO MODAL */
 .modal-style {
-    width: 75%;
-    margin: 0 25%;
+    width: 40%;
+    margin: 0% 25%;
     max-width: 500px;
     background-color: white;
     padding: 15px;
     border-radius: 15px;
+    border-style:groove;
 }
 
 /* .link-default {
