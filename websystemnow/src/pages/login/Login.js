@@ -1,11 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import styles from "../login/Login.css"
 import imagens from "../../imagens/Logo ft black.png"
-// import modalCadastro from '../../Component/Modal/modal';
-import modal from "../../Component/Modal/modal"
-
-import { NavLink } from "react-router-dom";
-import { FormGroup, Label, Form, Input, Card, Button  } from 'reactstrap';
 // import styles from "../../../public/css/styles.css"
 
 import Modal from 'react-modal';
@@ -57,35 +52,47 @@ Modal.setAppElement("#root");
                                 
               <div class="row">
                 <div class="col">
-                  <p class="text-center mt-2 form-text" data-bs-toggle="modal"data-bs-target="#register-modal">Ainda não tem conta?
-                  {/* <span class="link-default"> Criar conta</span> */}
-                  {/* <button onclick={openModal}>Criar conta</button>                   */}
-                  </p>
                 </div>
               </div>
             </div>
           </div>
         </form>
+        <button class="btn button-criar-conta" onClick={openModal}>Crie sua conta aqui!</button>
       </div>
 
-      <button onClick={openModal}>Criar conta</button>
+      
+        <div className = "modal"> 
+        {/* https://reactcommunity.org/react-modal/ */}
+        <Modal 
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          // contentLabel='Example Modal'
+          // overLayClassName="modal-overlay"
+          className="modal-style"
+        >
 
-      <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={closeModal}
-            contentLabel='Example Modal'
-            overLayClassName="modal-overlay"
-            className="modal-content"
-            >
-            <h2>Hello - I am modal</h2>
-            <hr />
-            <p>
-            isso é a modal
-            </p>
-            <button onClick={closeModal}>Close</button>
+              <h2>Criando seu cadastro</h2>
+              <hr />
+              <p>
+              <h4>Informe seu email:</h4>
+              <input type="email" class="form-control" id="password-login-input"/>
+              <h4>Senha:</h4>
+              <input type="password" class="form-control" id="password-login-input"/>
+              <h4>Confirmar senha:</h4>
+              <input type="password" class="form-control" id="password-login-input"/>
+              </p>
+              <div class="row">
+                
+                <div class="col">
+                  <button onClick={closeModal}>Close</button>
+
+                  <button>Registrar</button>
+                </div>
+
+              </div>
 
         </Modal>
-        
+        </div>
     </div>
   )
 
