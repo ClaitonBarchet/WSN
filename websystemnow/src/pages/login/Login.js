@@ -24,26 +24,26 @@ Modal.setAppElement("#root");
       <body>
       <div class="row vh-100">
         <form  id="login-form" action="home.html" class="form-login">
-          {/* <div class="d-flex justify-content-center my-5 flex-column"> */}
-            {/* <div class="container"> */}
-              <div class="text-cente mb-6">
+          <div class="d-flex justify-content-center my-5 flex-column">
+            <div class="container">
+              <div class="text-cente mb-3">
               {/* https://pt.stackoverflow.com/questions/309953/como-inserir-imagem-usando-react-js */}
                 <img src={imagens} alt="logo sinos"></img>
               </div>
            
-              <div class="mb-6">
+              <div class="mb-4">
                 <label for="exampleInputEmail1">E-mail:</label>
                 <br></br>
-                  <input type="email" class="form-control" id="email-login-input" aria-describedby="emailHelp"/>
+                  <input type="email" class="input-basic" id="email-login-input" aria-describedby="emailHelp"/>
                 <div id="emailHelp" class="form-text">Utilize seu e-mail para realizar o login.</div>
               </div>
               <p></p>
-              <div class="mb-6">
+              <div class="mb-4">
                 <label for="exampleInputPassword1">Senha:</label>
                 <br></br>
-                  <input type="password" class="form-control" id="password-login-input"/>
+                  <input type="password" class="input-basic" id="password-login-input"/>
               </div>
-              <div class="mb-6 form-check">
+              <div class="mb-4 form-check">
                   {/* <input type="checkbox" class="form-check-input" id="exampleCheck1"/> */}
                 {/* <label class="form-check-label" for="exampleCheck1">Permanecer logado.</label> */}
               </div>
@@ -51,8 +51,8 @@ Modal.setAppElement("#root");
               <div class="row">
                 <div class="col">
                 </div>
-              {/* </div> */}
-            {/* </div> */}
+              </div>
+            </div>
           </div>
         </form>
         <p></p>
@@ -76,13 +76,16 @@ Modal.setAppElement("#root");
               <hr />
               <p></p>
                 <label>Informe seu email:</label>
-                <input type="email" class="form-control" id="password-login-input"/>
+                <br></br>
+                <input type="email" class="input-basic" id="password-login-input"/>
                 <p></p>
                 <label>Senha:</label>
-                <input type="password" class="form-control" id="password-login-input"/>
+                <br></br>
+                <input type="password" class="input-basic" id="password-login-input"/>
                 <p></p>
                 <label>Confirmar senha:</label>
-                <input type="password" class="form-control" id="password-login-input"/>
+                <br></br>
+                <input type="password" class="input-basic" id="password-login-input"/>
               <div class="row">
                 <br></br>
                   <button class="btn button-basic" onClick={closeModal}>Cancelar</button>

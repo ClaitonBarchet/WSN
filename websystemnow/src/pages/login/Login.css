@@ -1,7 +1,7 @@
 
 /* FORMULARIO LOGIN */
 body {
-    background:linear-gradient(120deg, #a6c1f7 44.9%, #eeeeee 45%)  fixed;
+    background:linear-gradient(120deg, #c2c6ff 44.9%, #eeeeee 45%)  fixed;
     /* background:linear-gradient(120deg, #4c79d34d 44.9%, #eeeeee 45%) no-repeat fixed; */
 }
 .form-login {
@@ -9,11 +9,15 @@ body {
     margin: 0% 40%;
 }
 
-/* INPUTS */
-.form-control {
-    width: 250px;
+/* INPUTS - TEXTBOX */
+.input-basic {
+    width: 200px;
+    border-style: groove;
     border-radius: 5px;
     border-color: rgb(210, 209, 209);
+    height: 30px;
+    width: 250px;
+    font-size: 18px;
 }
 
 /* .text-login {
@@ -63,26 +67,11 @@ body {
 
 /* FORMULÁRIO MODAL */
 .modal-style {
-    width: 40%;
-    margin: 0% 25%;
+    width: 50%;
+    margin: 5% 30% 25%;
     max-width: 500px;
     background-color: white;
-    padding: 15px;
-    border-radius: 15px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
     border-style:groove;
 }
-
-/* .link-default {
-    color: #4e0070;
-    cursor: pointer;
-} */
-
-/* .link-default:hover {
-    color: #4c79d3;
-} */
-
-/* .setor-atual {
-    color: black;
-    font-size: 22px;
-    font-style: oblique;
-} */
