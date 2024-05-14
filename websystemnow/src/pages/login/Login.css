@@ -1,80 +1,82 @@
+
+/* FORMULARIO LOGIN */
 body {
     background:linear-gradient(120deg, #4c79d34d 44.9%, #eeeeee 45%) no-repeat fixed;
 }
+.form-login {
+    width: 40%;
+    margin: 0% 40%;
+}
 
-/* .modal-overlay {
-    background-color: #4e0070;
-    width: 50%;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* INPUTS */
+.form-control {
+    width: 250px;
+    border-radius: 5px;
+    border-color: rgb(210, 209, 209);
+}
+
+/* .text-login {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
 } */
 
+/* BOTÃO ENTRAR */
+.button-login {
+    border-radius: 5px;
+    background-color: #014F93;
+    color: #ffffff;
+    width: 150px;
+    margin: 0 45%;
+}
+.button-login:hover {
+    background:  #4e79d3;
+    color: #ffffff;
+}
+
+/* #button-submit {
+    border-radius: 5px;
+    background-color: #014F93;
+    color: #ffffff;
+    width: 100%;
+    margin: 0 25%;
+    border-color: rgb(210, 209, 209);
+} */
+
+/* BOTÃO CRIAR CONTA */
+.button-criar-conta {
+    border-radius: 5px;
+    background-color: white;
+    width: 150px;
+    margin: 0 45%;
+    border-color: rgb(210, 209, 209);
+}
+.button-criar-conta:hover {
+    background:  #4e79d3;
+    color: #ffffff;
+}
+
+/* FORMULÁRIO MODAL */
 .modal-style {
-    width: 50%;
-    margin: 0 35%;
+    width: 75%;
+    margin: 0 25%;
     max-width: 500px;
     background-color: white;
     padding: 15px;
     border-radius: 15px;
 }
 
-.button-criar-conta {
-    border-radius: 5px;
-    background-color: white;
-    width: 150px;
-    margin: 0 45%;
-}
-
-.form-login {
-    /* width: 60%; */
-    margin: 5% 45%;
-}
-
-.text-login {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.button-login {
-    border-radius: 5px;
-    background-color: #014F93;
-    color: #ffffff;
-    width: 100%;
-    margin: 0 25%;
-}
-
-#button-submit {
-    border-radius: 5px;
-    background-color: #014F93;
-    color: #ffffff;
-    width: 100%;
-    margin: 0 25%;
-}
-
-.button-login:hover {
-    background:  #4e79d3;
-    color: #ffffff;
-}
-
-.link-default {
+/* .link-default {
     color: #4e0070;
     cursor: pointer;
-}
+} */
 
-.link-default:hover {
+/* .link-default:hover {
     color: #4c79d3;
-}
+} */
 
-.setor-atual {
+/* .setor-atual {
     color: black;
     font-size: 22px;
     font-style: oblique;
-    
-}
+} */
