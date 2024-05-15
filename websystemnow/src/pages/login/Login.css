@@ -17,7 +17,7 @@ body {
     border-radius: 5px;
     border-color: rgb(230, 230, 230);
     height: 35px;
-    width: 250px;
+    width: 300px;
     font-size: 18px;
 }
 
@@ -28,7 +28,7 @@ body {
     background-color: #014F93;
     color: #ffffff;
     height: 35px;
-    width: 150px;
+    width: 175px;
 }
 .button-basic:hover {
     border-color: #f6ca47;
@@ -41,7 +41,7 @@ body {
     border-radius: 5px;
     background-color: white;
     height: 30px;
-    width: 150px;
+    width: 175px;
     border-color: rgb(210, 209, 209);
 }
 .button-criar-conta:hover {

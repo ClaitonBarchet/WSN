@@ -18,10 +18,13 @@ Modal.setAppElement("#root");
       setIsOpen(false);
     }
 
-    return (
+    // export default class Example extends React.Component {
+      // render() {
 
+    return (
+      
       // <body>
-        <div>
+        <div class="container">
           
       {/* <Container>
         <Row>
@@ -33,15 +36,13 @@ Modal.setAppElement("#root");
       </Container> */}
 
             <form action="home.html">
-              <div class="d-flex justify-content-center my-5 flex-column">
-                <div align="center">
+                  <div align="center">
                   {/* https://pt.stackoverflow.com/questions/309953/como-inserir-imagem-usando-react-js */}
                   <img src={imagens} alt="logo sinos"></img>
-                </div>
 
                   <div>
                     <label>E-mail:</label>
-                      <div align="center">
+                      <div>
                       <input type="email" class="input-basic" id="email-login-input"/>
                       </div>
                     </div>
@@ -53,7 +54,7 @@ Modal.setAppElement("#root");
 
                   <div>
                     <label>Senha:</label>
-                    <div align="center">
+                    <div>
                     <input type="password" class="input-basic" id="password-login-input"/>
                     </div>
                   </div>
@@ -105,7 +106,10 @@ Modal.setAppElement("#root");
           </div>
         </div>
       // </body>
+      
   )
+// }
+// }
 
 }
 
