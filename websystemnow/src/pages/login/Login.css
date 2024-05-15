@@ -6,7 +6,7 @@
 
 /* FORMULARIO LOGIN */
 body {
-    background:linear-gradient(120deg, #c2ceff 44.9%, #eeeeee 45%)  fixed;
+    background:linear-gradient(120deg, rgb(194, 206, 255) 44.9%, #eeeeee 45%)  fixed;
     /* background:linear-gradient(120deg, #4c79d34d 44.9%, #eeeeee 45%) no-repeat fixed; */
 }
 
@@ -15,7 +15,7 @@ body {
     width: 200px;
     border-style: groove;
     border-radius: 5px;
-    border-color: rgb(210, 209, 209);
+    border-color: rgb(230, 230, 230);
     height: 35px;
     width: 250px;
     font-size: 18px;
@@ -53,7 +53,6 @@ body {
 .modal-style {
     width: 400px;
     margin: 2% 30% 25%;
-    max-width: 500px;
     background-color: white;
     padding: 15px 15px 15px 15px;
     border-radius: 20px;

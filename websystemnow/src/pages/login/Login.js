@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import styles from "../login/Login.css";
 import imagens from "../../imagens/Logo ft black.png";
 import Modal from 'react-modal';
+import { Container, Row, Col } from 'reactstrap';
 
 Modal.setAppElement("#root");
 
@@ -17,42 +18,40 @@ Modal.setAppElement("#root");
       setIsOpen(false);
     }
 
-  return (
-    // https://mui.com/material-ui/react-grid/
-    // GRID
+    return (
 
+      // <body>
+        <div>
+          
+      {/* <Container>
+        <Row>
+          <Col>1</Col>
+          <Col>2</Col>
+          <Col>3</Col>
+          <Col>4</Col>
+        </Row>
+      </Container> */}
 
-
-
-
-
-
-
-
-
-      <body>
-        <div class="container">
-
-            <form  id="login-form" action="home.html">
+            <form action="home.html">
               <div class="d-flex justify-content-center my-5 flex-column">
                 <div align="center">
                   {/* https://pt.stackoverflow.com/questions/309953/como-inserir-imagem-usando-react-js */}
                   <img src={imagens} alt="logo sinos"></img>
                 </div>
 
-                  <div class="col-sm-4">
+                  <div>
                     <label>E-mail:</label>
                       <div align="center">
                       <input type="email" class="input-basic" id="email-login-input"/>
                       </div>
                     </div>
 
-                  <div align="left" class="col-sm-4">
-                    <label>Utilize seu e-mail para realizar o login.</label>
+                  <div>
+                    <label class="text-form" >Utilize seu e-mail para realizar o login.</label>
                     <br></br>
                   </div>
 
-                  <div align="left" class="col-sm-4" for="exampleInputPassword1">
+                  <div>
                     <label>Senha:</label>
                     <div align="center">
                     <input type="password" class="input-basic" id="password-login-input"/>
@@ -105,7 +104,7 @@ Modal.setAppElement("#root");
           </Modal>
           </div>
         </div>
-      </body>
+      // </body>
   )
 
 }
