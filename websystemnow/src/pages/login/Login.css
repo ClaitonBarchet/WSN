@@ -1,12 +1,13 @@
+/* https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout */
+/* .wrapper {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+  } */
 
 /* FORMULARIO LOGIN */
 body {
     background:linear-gradient(120deg, #c2ceff 44.9%, #eeeeee 45%)  fixed;
     /* background:linear-gradient(120deg, #4c79d34d 44.9%, #eeeeee 45%) no-repeat fixed; */
-}
-.form-login {
-    /* padding: 15px 15px 15px 15px; */
-    /* width: 50%; */
 }
 
 /* INPUTS - TEXTBOX */
