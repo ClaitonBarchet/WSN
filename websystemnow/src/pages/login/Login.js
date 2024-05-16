@@ -36,22 +36,21 @@ Modal.setAppElement("#root");
       </Container> */}
 
             <form class="form-basic" action="home.html">
-                  <div align="center">
                   {/* https://pt.stackoverflow.com/questions/309953/como-inserir-imagem-usando-react-js */}
                   <img src={imagens} alt="logo sinos"></img>
+                  
 
                   <div align="left">
                     <label>E-mail:</label>
                       <div>
                       <input type="email" class="input-form" id="email-login-input"/>
                       </div>
-                    </div>
+                  </div>
 
                   <div align="left">
                     <label class="text-form" >Utilize seu e-mail para realizar o login.</label>
                     <br></br>
                   </div>
-
 
                   <p></p>
                   <div align="left">
@@ -60,8 +59,7 @@ Modal.setAppElement("#root");
                     <input type="password" class="input-form" id="password-login-input"/>
                     </div>
                   </div>
-                
-              </div>
+              
             </form>
 
               <div align="center">

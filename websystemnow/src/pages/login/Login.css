@@ -11,12 +11,11 @@ body {
 }
 
 .form-basic {
-    padding: 25%;
-    width: 50%; 
-    margin: 5% 20% 50px 20%;
-    max-width: 75%;
-    min-width: 30%;
-    padding: 50px;
+    padding: 5%;
+    width: 60%; 
+    margin: 5% 15% 0% 15%;
+    /* max-width: 75%;
+    min-width: 30%; */
     border-radius: 20px;
     border-style: groove;
 }
