@@ -2,14 +2,23 @@ import React, {useState} from 'react';
 import styles from "../login/Login.css";
 import imagens from "../../imagens/Logo ft black.png";
 import Modal from 'react-modal';
-import { Container, Row, Col } from 'reactstrap';
-
+import { FormGroup, Label, Form, Input, Card, Button  } from 'reactstrap';
 Modal.setAppElement("#root");
 
-// const Login = () => {
-  function Login() {
+const Login = () => {
     const [modalIsOpen, setIsOpen] = useState(false);
+    const [email, setEmail]= useState("")
+    // METODO CADASTRAR
+    const cadastrar = async (e) => {
+      e.preventDefault()
+      // if(email)
 
+      alert("teste modal cadastro")
+
+    }
+
+
+    // METODO DA MODAL
     function openModal() {
       setIsOpen(true);
     }
@@ -18,26 +27,13 @@ Modal.setAppElement("#root");
       setIsOpen(false);
     }
 
-    // export default class Example extends React.Component {
-      // render() {
-
     return (
       
-      // <body>
         <div class="container">
-          
-      {/* <Container>
-        <Row>
-          <Col>1</Col>
-          <Col>2</Col>
-          <Col>3</Col>
-          <Col>4</Col>
-        </Row>
-      </Container> */}
 
             <form class="form-basic" action="home.html">
                   
-                    <div align="center">
+                    <div align="left">
                       {/* https://pt.stackoverflow.com/questions/309953/como-inserir-imagem-usando-react-js */}
                       <img src={imagens} alt="logo sinos"></img>
                     </div>
@@ -71,46 +67,40 @@ Modal.setAppElement("#root");
                 <button class="btn button-criar-conta" onClick={openModal}>Crie sua conta aqui</button>
               </div>
 
-
+{/* MODAL */}
           <div className = "modal"> 
           {/* https://reactcommunity.org/react-modal/ */}
-          <Modal 
-            isOpen={modalIsOpen}
-            onRequestClose={closeModal}
-            // contentLabel='Example Modal'
-            // overLayClassName="modal-overlay"
-            className="modal-style"
-          >
+            <Modal 
+              isOpen={modalIsOpen}
+              onRequestClose={closeModal}
+              className="modal-style"
+            >
+              <FormGroup>
                 <h2>Criando novo cadastro</h2>
                 <hr/>
-                <p></p>
-                  <label>Informe seu email:</label>
-                  <br></br>
-                  <input type="email" class="input-modal" id="password-login-input"/>
-                  <br></br>
-                  <label>Senha:</label>
-                  <br></br>
-                  <input type="password" class="input-modal" id="password-login-input"/>
-                  <br></br>
-                  <label>Confirmar senha:</label>
-                  <br></br>
-                  <input type="password" class="input-modal" id="password-login-input"/>
-                <div>
+                  <p></p>
+                    <label>Informe seu email:</label>
+                    <br></br>
+                    <input type="email" class="input-modal" name="email"/>
+                    <br></br>
+                    <label>Senha:</label>
+                    <br></br>
+                    <input type="password" class="input-modal" id="password-login-input"/>
+                    <br></br>
+                    <label>Confirmar senha:</label>
+                    <br></br>
+                    <input type="password" class="input-modal" id="password-login-input"/>
                   <div>
-                      <button class="btn button-modal" onClick={closeModal}>Cancelar</button>                   
-                      <button class="btn button-modal">Registrar</button>
+                    <div>
+                        <button class="btn button-modal" onClick={closeModal}>Cancelar</button>                   
+                        <button class="btn button-modal" onClick={cadastrar}>Cadastrar</button>
+                    </div>
                   </div>
-                </div>
-
-          </Modal>
+                  </FormGroup>
+            </Modal>
           </div>
         </div>
-      // </body>
-      
   )
-// }
-// }
-
 }
 
 export default Login; 
