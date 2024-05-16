@@ -10,41 +10,76 @@ body {
     /* background:linear-gradient(120deg, #4c79d34d 44.9%, #eeeeee 45%) no-repeat fixed; */
 }
 
-/* INPUTS - TEXTBOX */
-.input-basic {
+.form-basic {
+    padding: 25%;
+    width: 40%; 
+    margin: 5% 30% 50px 30%;
+    max-width: 75%;
+    min-width: 30%;
+    padding: 15px;
+    border-radius: 20px;
+    /* border-style: groove; */
+}
+
+.input-form {
     max-width: 95%;
     min-width: 5%;
     border-style: groove;
     border-radius: 5px;
     border-color: rgb(230, 230, 230);
     height: 35px;
-    width: 300px;
+    width: 95%;
     font-size: 18px;
 }
 
-/* BOTÃO ENTRAR */
+/* INPUTS - TEXTBOX */
+.input-modal {
+    max-width: 5%;
+    min-width: 95%;
+    width: 33.3%;
+    margin: 0% 0% 20px 0%;
+    border-style: groove;
+    border-radius: 5px;
+    border-color: rgb(230, 230, 230);
+    height: 35px;
+    font-size: 18px;
+}
+.button-modal {
+    border-radius: 5px;
+    border-color: #014F93;
+    background-color: #014F93;
+    color: #ffffff;
+    height: 35px;
+    width: 40%;
+    margin: 2% 0% 10px 5%;
+}
+
+/* BOTOES FORM */
 .button-basic {
     border-radius: 5px;
     border-color: #014F93;
     background-color: #014F93;
     color: #ffffff;
     height: 35px;
-    width: 175px;
+    width: 25%;
+    margin: 2% 0% 10px 0%;
 }
+
 .button-basic:hover {
     border-color: #f6ca47;
     background:  #f6ca47;
     color: #ffffff;
 }
 
-/* BOTÃO CRIAR CONTA */
 .button-criar-conta {
     border-radius: 5px;
     background-color: white;
-    height: 30px;
-    min-width: 35%;
+    height: 35px;
     border-color: rgb(210, 209, 209);
+    width: 25%;
+    margin: 0% 0% 10px 0%;
 }
+
 .button-criar-conta:hover {
     background:  #f6ca47;
     color: #ffffff;
@@ -52,9 +87,10 @@ body {
 
 /* FORMULÁRIO MODAL */
 .modal-style {
-    max-width: 50%;
+    max-width: 75%;
     min-width: 35%;
-    margin: 2% 30% 25%;
+    width: 40%; 
+    margin: 2% 30% 50px 30%;
     background-color: white;
     padding: 15px;
     border-radius: 20px;

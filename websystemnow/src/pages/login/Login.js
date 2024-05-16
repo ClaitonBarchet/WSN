@@ -35,27 +35,29 @@ Modal.setAppElement("#root");
         </Row>
       </Container> */}
 
-            <form action="home.html">
+            <form class="form-basic" action="home.html">
                   <div align="center">
                   {/* https://pt.stackoverflow.com/questions/309953/como-inserir-imagem-usando-react-js */}
                   <img src={imagens} alt="logo sinos"></img>
 
-                  <div>
+                  <div align="left">
                     <label>E-mail:</label>
                       <div>
-                      <input type="email" class="input-basic" id="email-login-input"/>
+                      <input type="email" class="input-form" id="email-login-input"/>
                       </div>
                     </div>
 
-                  <div>
+                  <div align="left">
                     <label class="text-form" >Utilize seu e-mail para realizar o login.</label>
                     <br></br>
                   </div>
 
-                  <div>
+
+                  <p></p>
+                  <div align="left">
                     <label>Senha:</label>
                     <div>
-                    <input type="password" class="input-basic" id="password-login-input"/>
+                    <input type="password" class="input-form" id="password-login-input"/>
                     </div>
                   </div>
                 
@@ -72,7 +74,7 @@ Modal.setAppElement("#root");
 
           <div className = "modal"> 
           {/* https://reactcommunity.org/react-modal/ */}
-          <Modal
+          <Modal 
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
             // contentLabel='Example Modal'
@@ -84,21 +86,19 @@ Modal.setAppElement("#root");
                 <p></p>
                   <label>Informe seu email:</label>
                   <br></br>
-                  <input type="email" class="input-basic" id="password-login-input"/>
-                  <p></p>
+                  <input type="email" class="input-modal" id="password-login-input"/>
+                  <br></br>
                   <label>Senha:</label>
                   <br></br>
-                  <input type="password" class="input-basic" id="password-login-input"/>
-                  <p></p>
+                  <input type="password" class="input-modal" id="password-login-input"/>
+                  <br></br>
                   <label>Confirmar senha:</label>
                   <br></br>
-                  <input type="password" class="input-basic" id="password-login-input"/>
-                <p></p>
-
-                <div class="mb-3">
+                  <input type="password" class="input-modal" id="password-login-input"/>
+                <div>
                   <div>
-                      <button class="btn button-basic" onClick={closeModal}>Cancelar</button>                   
-                      <button class="btn button-basic">Registrar</button>
+                      <button class="btn button-modal" onClick={closeModal}>Cancelar</button>                   
+                      <button class="btn button-modal">Registrar</button>
                   </div>
                 </div>
 
