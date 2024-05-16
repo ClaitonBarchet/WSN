@@ -13,6 +13,7 @@ const Login = () => {
     
     // METODO CADASTRAR - MODAL
     const cadastrar = async (e) => {
+      // const {createUser, error,setError, loading } = useAuthentication();
       e.preventDefault()
 
       if(email == ("")){
@@ -40,6 +41,7 @@ const Login = () => {
         return;
       }
       
+      // const res = await createUser (user)
 
     }
 

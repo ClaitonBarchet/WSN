@@ -14,15 +14,11 @@ body {
     padding: 5%;
     width: 60%; 
     margin: 0% 15% 0% 15%;
-    /* max-width: 75%;
-    min-width: 30%; */
     border-radius: 20px;
     /* border-style: groove; */
 }
 
 .input-form {
-    /* max-width: 95%;
-    min-width: 5%; */
     border-style: groove;
     border-radius: 5px;
     border-color: rgb(230, 230, 230);
@@ -41,7 +37,7 @@ body {
     border-radius: 5px;
     border-color: rgb(230, 230, 230);
     height: 35px;
-    font-size: 18px;
+    font-size: 14px;
 }
 .button-modal {
     border-radius: 5px;
