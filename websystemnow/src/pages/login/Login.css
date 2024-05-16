@@ -13,11 +13,11 @@ body {
 .form-basic {
     padding: 5%;
     width: 60%; 
-    margin: 5% 15% 0% 15%;
+    margin: 0% 15% 0% 15%;
     /* max-width: 75%;
     min-width: 30%; */
     border-radius: 20px;
-    border-style: groove;
+    /* border-style: groove; */
 }
 
 .input-form {
@@ -84,14 +84,14 @@ body {
     color: #ffffff;
 }
 
-/* FORMULÁRIO MODAL */
+/* FORMULÁRIO MODAL  padding x 2 + width + margin x 2 = 100% */
 .modal-style {
-    max-width: 75%;
-    min-width: 35%;
-    width: 40%; 
-    margin: 2% 30% 50px 30%;
+    /* max-width: 75%;
+    min-width: 35%; */
+    padding: 20px;
+    width: 50%; 
+    margin: 2% 20% 50px 20%;
     background-color: white;
-    padding: 15px;
     border-radius: 20px;
     border-style: groove;
 }

@@ -36,10 +36,12 @@ Modal.setAppElement("#root");
       </Container> */}
 
             <form class="form-basic" action="home.html">
-                  {/* https://pt.stackoverflow.com/questions/309953/como-inserir-imagem-usando-react-js */}
-                  <img src={imagens} alt="logo sinos"></img>
                   
-
+                    <div align="center">
+                      {/* https://pt.stackoverflow.com/questions/309953/como-inserir-imagem-usando-react-js */}
+                      <img src={imagens} alt="logo sinos"></img>
+                    </div>
+                 
                   <div align="left">
                     <label>E-mail:</label>
                       <div>
