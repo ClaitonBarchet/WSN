@@ -12,18 +12,18 @@ body {
 
 .form-basic {
     padding: 25%;
-    width: 40%; 
-    margin: 5% 30% 50px 30%;
+    width: 50%; 
+    margin: 5% 20% 50px 20%;
     max-width: 75%;
     min-width: 30%;
-    padding: 15px;
+    padding: 50px;
     border-radius: 20px;
-    /* border-style: groove; */
+    border-style: groove;
 }
 
 .input-form {
-    max-width: 95%;
-    min-width: 5%;
+    /* max-width: 95%;
+    min-width: 5%; */
     border-style: groove;
     border-radius: 5px;
     border-color: rgb(230, 230, 230);
@@ -61,7 +61,7 @@ body {
     background-color: #014F93;
     color: #ffffff;
     height: 35px;
-    width: 25%;
+    width: 30%;
     margin: 2% 0% 10px 0%;
 }
 
@@ -76,7 +76,7 @@ body {
     background-color: white;
     height: 35px;
     border-color: rgb(210, 209, 209);
-    width: 25%;
+    width: 30%;
     margin: 0% 0% 10px 0%;
 }
 
