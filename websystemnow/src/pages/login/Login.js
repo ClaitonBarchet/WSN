@@ -3,6 +3,7 @@ import styles from "../login/Login.css";
 import imagens from "../../imagens/Logo ft black.png";
 import Modal from 'react-modal';
 import { FormGroup, Label, Form, Input, Card, Button  } from 'reactstrap';
+// import { useAuthentication } from '../../hooks/useAuthentication';
 Modal.setAppElement("#root");
 
 const Login = () => {
@@ -10,11 +11,17 @@ const Login = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [confirmPassword, setConfirmPassword] = useState("")
-    
+    // const {createUser, error,setError, loading } = useAuthentication();
+
     // METODO CADASTRAR - MODAL
-    const cadastrar = async (e) => {
+    const Cadastrar = async (e) => {
       // const {createUser, error,setError, loading } = useAuthentication();
       e.preventDefault()
+
+      const user = {
+        email,
+        password,
+    }
 
       if(email == ("")){
         alert("Informe um email válido!");
@@ -41,9 +48,10 @@ const Login = () => {
         return;
       }
       
+      alert("bora cadastrar!")
       // const res = await createUser (user)
 
-    }
+    };
 
 
     // METODO DA MODAL
@@ -143,7 +151,7 @@ const Login = () => {
                   <div>
                     <div>
                         <button class="btn button-modal" onClick={closeModal}>Cancelar</button>                   
-                        <button class="btn button-modal" onClick={cadastrar}>Cadastrar</button>
+                        <button class="btn button-modal" onClick={Cadastrar}>Cadastrar</button>
                     </div>
                   </div>
                   </FormGroup>

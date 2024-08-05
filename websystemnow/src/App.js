@@ -3,6 +3,8 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import ReactDOM from 'react-dom';
+// import { useAuthentication } from "./hooks/useAuthentication";
+
 
 // hooks
 import { useState, useEffect } from "react";
