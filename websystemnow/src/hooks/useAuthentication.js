@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
-import  firebase from "firebase/compat/app";
-import app from "../firebase/config";
-import { firebaseConfig } from  "../firebase/config";
+// import  firebase from "firebase/compat/app";
+// import app from "../firebase/config";
+// import { firebaseConfig } from  "../firebase/config";
 
 import { 
   getAuth,
@@ -35,7 +35,7 @@ const createUser = async (dataUser) => {
   checkIfIsCancelled();
   setLoading(true)
   setError(null);
-  alert("cheguei aqui!")
+  
   try{ 
       const {user} = await createUserWithEmailAndPassword(
           auth,
@@ -65,14 +65,17 @@ const createUser = async (dataUser) => {
       }
 
       if(error.code ==="auth/email-already-in-use"){
-          systemErrorMessage = "Usuário já cadastrado"
+          systemErrorMessage = "Esse usuário já está cadastrado"
       }
       
       setLoading(false);
       setError(systemErrorMessage);
       console.log(systemErrorMessage)
+      alert(systemErrorMessage)
   }
 }
+
+
 
 //logout - sign out
 const logout = () => {
