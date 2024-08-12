@@ -1,18 +1,19 @@
-// import {
-//   getAuth,
-//   signInWithEmailAndPassword,
-//   updateProfile,
-//   signOut,
-//   createUserWithEmailAndPassword
-// } from 'firebase/auth'
-import { 
-  getAuth, 
-  createUserWithEmailAndPassword, 
-  signInWithEmailAndPassword, 
-  updateProfile, 
-  signOut } from "firebase/auth";
-
 import { useState, useEffect } from "react"
+import  firebase from "firebase/compat/app";
+import app from "../firebase/config";
+import { firebaseConfig } from  "../firebase/config";
+
+import { 
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  updateProfile,
+  signOut
+} from "firebase/auth";
+
+// if(!firebase.apps.length){
+//   firebase.initializeApp(firebaseConfig)
+// }
 
 export const useAuthentication = () => {
   const [error,setError] = useState (null)
@@ -32,10 +33,9 @@ function checkIfIsCancelled () {
 
 const createUser = async (dataUser) => {
   checkIfIsCancelled();
-
   setLoading(true)
   setError(null);
-
+  alert("cheguei aqui!")
   try{ 
       const {user} = await createUserWithEmailAndPassword(
           auth,

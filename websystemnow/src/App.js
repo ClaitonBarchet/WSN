@@ -3,6 +3,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 import ReactDOM from 'react-dom';
+import { onAuthStateChanged } from "firebase/auth";
 // import { useAuthentication } from "./hooks/useAuthentication";
 
 
