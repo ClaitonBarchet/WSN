@@ -4,6 +4,8 @@ import imagens from "../../imagens/Logo ft black.png";
 import Modal from 'react-modal';
 import { FormGroup, Label, Form, Input, Card, Button  } from 'reactstrap';
 import { useAuthentication } from '../../hooks/useAuthentication';
+import desktop from '../desktop/Desktop';
+import { Link } from "react-router-dom"
 Modal.setAppElement("#root");
 
 const Login = () => {
@@ -47,11 +49,8 @@ const Login = () => {
         alert("A senha precisa ter no mínimo 6 digitos.");
         return;
       }
-      
-      alert("bora cadastrar!")
-      
+           
       const res = await createUser (user) // em teste
-
     };
 
 
@@ -99,7 +98,8 @@ const Login = () => {
 
               <div align="center">
                 <p></p>
-                <button type="module" class="btn button-basic">Entrar</button>
+                <button type="module" onClick={desktop} class="btn button-basic">Entrar</button>
+                {/* <Link to="/desktop" class="btn button-basic">Entrar</Link> */}
                 <p></p>
                 <button class="btn button-criar-conta" onClick={openModal}>Crie sua conta aqui</button>
               </div>

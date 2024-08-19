@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react"
+import { firebaseConfig } from  "../firebase/config";//manter este código
 // import  firebase from "firebase/compat/app";
 // import app from "../firebase/config";
-// import { firebaseConfig } from  "../firebase/config";
-
 import { 
   getAuth,
   createUserWithEmailAndPassword,

@@ -5,7 +5,8 @@ import { Navigate } from "react-router-dom";
 import ReactDOM from 'react-dom';
 import { onAuthStateChanged } from "firebase/auth";
 // import { useAuthentication } from "./hooks/useAuthentication";
-
+//context - AUTENTICAÇAO DE USUÁRIO
+// import { AuthProvider } from "./context/AuthContext";
 
 // hooks
 import { useState, useEffect } from "react";
@@ -15,11 +16,9 @@ import { useState, useEffect } from "react";
 
 // pages
 import Login from "./pages/login/Login";
+import Desktop from './pages/desktop/Desktop';
 
 function App () {
-
-  // AUTENTICAÇÃO DE USUÁRIO
-  const [user, setUser] = useState(undefined)
 
   return (
     <div>
@@ -29,7 +28,8 @@ function App () {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Login />}>
-              <Route path="*" element={<Login />}/>
+              <Route path="/desktop" element={<Desktop />}></Route>
+              {/* <Route path="*" element={<Login />}/> */}
               </Route>
             </Routes>
           </BrowserRouter>
